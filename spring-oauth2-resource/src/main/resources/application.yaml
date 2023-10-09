@@ -1,0 +1,10 @@
+server:
+  port: 18080
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/auth/realms/letscodewithsk
+          jwk-set-uri: http://localhost:8080/auth/realms/letscodewithsk/protocol/openid-connect/certs
